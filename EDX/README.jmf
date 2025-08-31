@@ -1,0 +1,24 @@
+# Compile:
+```
+mkdir build
+cd build
+cmake ../
+make
+cd ..
+```
+
+# Execute:
+```
+./build/EDX
+```
+
+To run the simulation manually:
+```
+/run/initialize
+/run/beamOn 10000000
+```
+
+To display cutoff length after executing the simulation:
+```
+/run/dumpCouples
+```

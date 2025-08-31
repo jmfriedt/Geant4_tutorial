@@ -1,0 +1,4 @@
+/vis/open OGL
+/vis/drawVolume
+/vis/viewer/setViewpointThetaPhi 90 180
+/vis/scene/add/axes 0 
