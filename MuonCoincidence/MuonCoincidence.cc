@@ -21,8 +21,8 @@ int main(int argc, char** argv) {
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
     runManager->SetUserInitialization(new DetectorConstruction());
-    // runManager->SetUserInitialization(new QGSP_BERT());
-    runManager->SetUserInitialization(new G4EmStandardPhysics_option4());
+    // see https://geant4.in2p3.fr/IMG/pdf_PhysicsLists.pdf
+    runManager->SetUserInitialization(new QGSP_BERT());
     runManager->SetUserAction(new PrimaryGeneratorAction());
 
     runManager->Initialize();

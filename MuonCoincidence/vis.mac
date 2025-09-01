@@ -1,4 +1,12 @@
-/vis/open OGL
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Visualization/visualization.html
+/vis/open
+/vis/scene/create
 /vis/drawVolume
-/vis/viewer/setViewpointThetaPhi 90 180
-/vis/scene/add/axes 0 
+/vis/drawLogicalVolume 0
+/vis/scene/add/trajectories
+/vis/scene/endOfEventAction accumulate # keep all tracks after simulation
+/vis/scene/add/hits
+/vis/viewer/set/viewpointThetaPhi 90 0
+
+/run/initialize
+/run/beamOn 10
