@@ -1,15 +1,15 @@
-#ifndef EDXDetectorConstruction_h
-#define EDXDetectorConstruction_h 1
+#ifndef DetectorConstruction_h
+#define DetectorConstruction_h 1
 
 #include "G4VUserDetectorConstruction.hh"
 #include "globals.hh"
 
 class G4VPhysicalVolume;
 
-class EDXDetectorConstruction : public G4VUserDetectorConstruction {
+class DetectorConstruction : public G4VUserDetectorConstruction {
 public:
-    EDXDetectorConstruction();
-    virtual ~EDXDetectorConstruction();
+    DetectorConstruction();
+    virtual ~DetectorConstruction();
 
     virtual G4VPhysicalVolume* Construct() override;
 };

@@ -1,15 +1,15 @@
-#ifndef EDXEventAction_h
-#define EDXEventAction_h 1
+#ifndef EventAction_h
+#define EventAction_h 1
 
 #include "G4UserEventAction.hh"
 #include "globals.hh"
 
 class G4Event;
 
-class EDXEventAction : public G4UserEventAction {
+class EventAction : public G4UserEventAction {
 public:
-    EDXEventAction();
-    virtual ~EDXEventAction();
+    EventAction();
+    virtual ~EventAction();
 
     virtual void BeginOfEventAction(const G4Event*);
     virtual void EndOfEventAction(const G4Event*);

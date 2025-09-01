@@ -1,15 +1,15 @@
-#ifndef EDXSteppingAction_h
-#define EDXSteppingAction_h 1
+#ifndef SteppingAction_h
+#define SteppingAction_h 1
 
 #include "G4UserSteppingAction.hh"
 #include "globals.hh"
 
 class G4Step;
 
-class EDXSteppingAction : public G4UserSteppingAction {
+class SteppingAction : public G4UserSteppingAction {
 public:
-    EDXSteppingAction();
-    virtual ~EDXSteppingAction();
+    SteppingAction();
+    virtual ~SteppingAction();
 
     virtual void UserSteppingAction(const G4Step* step) override;
 };

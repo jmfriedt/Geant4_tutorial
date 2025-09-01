@@ -1,5 +1,5 @@
-#ifndef EDXPrimaryGeneratorAction_h
-#define EDXPrimaryGeneratorAction_h 1
+#ifndef PrimaryGeneratorAction_h
+#define PrimaryGeneratorAction_h 1
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "globals.hh"
@@ -7,10 +7,10 @@
 class G4ParticleGun;
 class G4Event;
 
-class EDXPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
+class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction {
 public:
-    EDXPrimaryGeneratorAction();
-    virtual ~EDXPrimaryGeneratorAction();
+    PrimaryGeneratorAction();
+    virtual ~PrimaryGeneratorAction();
 
     virtual void GeneratePrimaries(G4Event* event) override;
 
