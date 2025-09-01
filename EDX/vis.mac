@@ -9,4 +9,4 @@
 /vis/viewer/set/viewpointThetaPhi 90 0
 
 /run/initialize
-/run/beamOn 10
+/run/beamOn 100
