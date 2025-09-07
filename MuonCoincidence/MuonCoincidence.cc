@@ -16,13 +16,15 @@ Detector 1 hit times:
 
 #include "DetectorConstruction.hh"
 #include "PrimaryGeneratorAction.hh"
+#include "PhysicsList.hh"
 
 int main(int argc, char** argv) {
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
     runManager->SetUserInitialization(new DetectorConstruction());
     // see https://geant4.in2p3.fr/IMG/pdf_PhysicsLists.pdf
-    runManager->SetUserInitialization(new QGSP_BERT());
+    // runManager->SetUserInitialization(new QGSP_BERT());
+    runManager->SetUserInitialization(new PhysicsList());
     runManager->SetUserAction(new PrimaryGeneratorAction());
 
     runManager->Initialize();

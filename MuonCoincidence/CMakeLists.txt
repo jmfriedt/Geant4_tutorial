@@ -8,6 +8,7 @@ add_executable(MuonCoincidence
     DetectorConstruction.cc
     PrimaryGeneratorAction.cc
     SensitiveDetector.cc
+    PhysicsList.cc
 )
 
 target_include_directories(MuonCoincidence PRIVATE ${Geant4_INCLUDE_DIRS})
